@@ -5,84 +5,231 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emergência - ApoioSiria</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para esta página */
+    .emergency-section {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .emergency-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .emergency-table th {
+      background-color: #add199;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    
+    .emergency-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
+    }
+    
+    .emergency-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .emergency-table tr:hover {
+      background-color: #ffe6e6;
+    }
+    
+    .location-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 4px solid #add199;
+    }
+    
+    .location-title {
+      color: #add199;
+      margin-bottom: 10px;
+    }
+    
+    .rating {
+      color: #ae0606;
+      font-weight: bold;
+    }
+    
+    .contact-box {
+      background-color: #f0f8ff;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    @media (max-width: 768px) {
+      .emergency-table {
+        font-size: 0.9em;
+      }
+      
+      .emergency-table th, 
+      .emergency-table td {
+        padding: 10px;
+      }
+      
+      .location-card {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-          <h1>ApoioSiria</h1>
-          <p>Integração e direitos dos refugiados sírios no Brasil</p>
-        </div>
-      </header>
-    <nav>
-        <div class="container nav-container">
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-            <li class="nav-item"><a href="direitos.html" class="nav-link">Direitos</a></li>
-            <li class="nav-item"><a href="ensino.html" class="nav-link">Cultura e Idioma</a></li>
-            <li class="nav-item"><a href="emergencia.html" class="nav-link.active">Emergência</a></li>
-          </ul>
-        </div>
-      </nav>
+  <header>
+    <div class="banner">
+      <img src="img/logo.jpg" alt="Logo do site ApoioSiria">
+    </div>
+  </header>
+  
+  <nav>
+    <div class="container nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="direitos.html" class="nav-link">Direitos</a></li>
+        <li class="nav-item"><a href="ensino.html" class="nav-link">Cultura e Idioma</a></li>
+        <li class="nav-item"><a href="emergencia.html" class="nav-link">Emergência</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="container">
-    <section>
-      <h2>Contatos de Emergência</h2>
-      <table>
-        <tr>
-          <th>Serviço</th>
-          <th>Telefone</th>
-          <th>Atendimento</th>
-        </tr>
-        <tr>
-          <td>Polícia Militar</td>
-          <td>190</td>
-          <td>24 horas</td>
-        </tr>
-        <tr>
-          <td>Samu (Saúde)</td>
-          <td>192</td>
-          <td>24 horas</td>
-        </tr>
-        <tr>
-          <td>Bombeiros</td>
-          <td>193</td>
-          <td>24 horas</td>
-        </tr>
+    <section class="emergency-section">
+      <h2>Contatos de Emergência Essenciais</h2>
+      <p>Serviços disponíveis em todo o Brasil:</p>
+      
+      <table class="emergency-table">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Telefone</th>
+            <th>Atendimento</th>
+            <th>Cobertura</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Polícia Militar</td>
+            <td><strong>190</strong></td>
+            <td>24 horas</td>
+            <td>Nacional</td>
+          </tr>
+          <tr>
+            <td>SAMU (Serviço de Atendimento Móvel de Urgência)</td>
+            <td><strong>192</strong></td>
+            <td>24 horas</td>
+            <td>Nacional</td>
+          </tr>
+          <tr>
+            <td>Bombeiros</td>
+            <td><strong>193</strong></td>
+            <td>24 horas</td>
+            <td>Nacional</td>
+          </tr>
+          <tr>
+            <td>Disque Direitos Humanos</td>
+            <td><strong>100</strong></td>
+            <td>24 horas</td>
+            <td>Nacional</td>
+          </tr>
+        </tbody>
       </table>
     </section>
 
-    <section>
-      <h2>Como Denunciar Xenofobia e Racismo</h2>
-      <h3>1. Disque Direitos Humanos</h3>
-      <p><strong>Telefone:</strong> 100 (ligação gratuita)</p>
-      <p>Funciona 24h e aceita denúncias anônimas.</p>
+    <section class="emergency-section">
+      <h2>Unidades de Saúde por Região</h2>
       
-      <h3>2. Delegacias Especializadas</h3>
-      <p>Procure a Delegacia mais próxima e:</p>
-      <ul>
-        <li>Peça para registrar um Boletim de Ocorrência</li>
-        <li>Leve testemunhas se possível</li>
-        <li>Anote o número do protocolo</li>
-      </ul>
+      <div class="location-card">
+        <h3 class="location-title">Salvador/BA</h3>
+        
+        <h4>UPA San Martin</h4>
+        <p><strong>Endereço:</strong> Av. San Martin, 560 – Boa Vista de São Caetano, CEP: 40301-110</p>
+        <p><strong>Contato:</strong> (71) 3116-9837</p>
+        <p class="rating">Avaliação: ★★★★☆</p>
+        
+        <h4>Hospital Geral do Estado (HGE)</h4>
+        <p><strong>Endereço:</strong> Av. Vasco da Gama, S/N – Brotas, CEP: 40283-001</p>
+        <p><strong>Contato:</strong> (71) 3117-6700</p>
+        <p class="rating">Avaliação: ★★★★☆</p>
+      </div>
       
-      <h3>3. Ministério Público Federal</h3>
-      <p>Para casos graves de discriminação:</p>
-      <ul>
-        <li><strong>Site:</strong> www.mpf.mp.br</li>
-        <li><strong>Disque MPF:</strong> 127 (em capitais)</li>
-      </ul>
+      <div class="location-card">
+        <h3 class="location-title">São Paulo/SP</h3>
+        
+        <h4>Hospital das Clínicas – SP</h4>
+        <p><strong>Endereço:</strong> Av. Dr. Enéas Carvalho de Aguiar, 255 – Cerqueira César, CEP: 05403-000</p>
+        <p><strong>Contato:</strong> (11) 2661-0000</p>
+        <p class="rating">Avaliação: ★★★★★</p>
+        
+        <h4>UPA Campo Limpo</h4>
+        <p><strong>Endereço:</strong> Rua da Consolação, 3020 – Consolação, CEP: 01302-000</p>
+        <p><strong>Contato:</strong> (11) 3397-7900</p>
+        <p class="rating">Avaliação: ★★★★☆</p>
+      </div>
+      
+      <div class="location-card">
+        <h3 class="location-title">Brasília/DF</h3>
+        
+        <h4>Hospital de Base</h4>
+        <p><strong>Endereço:</strong> SMHS Área Especial Quadra 101 – Asa Sul, CEP: 70330-150</p>
+        <p><strong>Contato:</strong> (61) 3315-1200</p>
+        <p class="rating">Avaliação: ★★★★☆</p>
+      </div>
     </section>
 
-    <section>
+    <section class="emergency-section">
+      <h2>Como Denunciar Xenofobia e Racismo</h2>
+      
+      <div class="contact-box">
+        <h3>1. Disque Direitos Humanos</h3>
+        <p><strong>Telefone:</strong> 100 (ligação gratuita)</p>
+        <p>Funciona 24h e aceita denúncias anônimas.</p>
+      </div>
+      
+      <div class="contact-box">
+        <h3>2. Delegacias Especializadas</h3>
+        <p>Procure a Delegacia mais próxima e:</p>
+        <ul>
+          <li>Peça para registrar um Boletim de Ocorrência</li>
+          <li>Leve testemunhas se possível</li>
+          <li>Anote o número do protocolo</li>
+        </ul>
+      </div>
+      
+      <div class="contact-box">
+        <h3>3. Ministério Público Federal</h3>
+        <p>Para casos graves de discriminação:</p>
+        <ul>
+          <li><strong>Site:</strong> www.mpf.mp.br</li>
+          <li><strong>Disque MPF:</strong> 127 (em capitais)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="emergency-section">
       <h2>Assistência Social</h2>
-      <h3>Centros de Referência</h3>
-      <ul>
-        <li><strong>CRAS</strong> - Centro de Referência de Assistência Social</li>
-        <li><strong>CREAS</strong> - Centro de Referência Especializado</li>
-      </ul>
-      <p>Oferecem apoio psicológico e orientação gratuita.</p>
+      
+      <div class="contact-box">
+        <h3>Centros de Referência</h3>
+        <ul>
+          <li><strong>CRAS</strong> - Centro de Referência de Assistência Social</li>
+          <li><strong>CREAS</strong> - Centro de Referência Especializado</li>
+        </ul>
+        <p>Oferecem apoio psicológico e orientação gratuita.</p>
+      </div>
     </section>
   </main>
+  
   <footer>
     <div class="container">
       <p>ApoioSiria &copy; 2025 - Todos os direitos reservados</p>

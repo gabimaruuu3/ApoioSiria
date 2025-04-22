@@ -1,10 +1,21 @@
 /* Cores temáticas */
 :root {
-    --vermelho: #CE1126;
-    --verde: #007A3D;
+    --vermelho: #ae0606;
+    --verde: #add199;
     --preto: #000000;
     --branco: #FFFFFF;
     --cinza-claro: #F5F5F5;
+  }
+ 
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   
   /* Reset e Base */
@@ -23,7 +34,7 @@
   
   /* Layout */
   .container {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px;
   }

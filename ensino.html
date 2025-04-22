@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <style>
     /* Estilos específicos para esta página */
+    .intro-section {
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+      border-left: 4px solid #add199;
+    }
+    
     .glossario-container {
       background-color: #f9f9f9;
       border-radius: 10px;
@@ -22,7 +30,7 @@
     }
     
     .glossario-table th {
-      background-color: #007A3D;
+      background-color: #add199;
       color: white;
       padding: 15px;
       text-align: center;
@@ -43,19 +51,48 @@
       background-color: #e6f7e6;
     }
     
+    .cultura-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
     
-    .cultura-section h3 {
-      color: #CE1126;
-      border-bottom: 2px solid #007A3D;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
+    .curso-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 4px solid #ae0606;
+    }
+    
+    .curso-link {
+      display: inline-block;
+      background-color: #add199;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    .curso-link:hover {
+      background-color: #add199;
     }
     
     .dica-box {
       background-color: #f0f8ff;
-      border-left: 4px solid #007A3D;
+      border-left: 4px solid #add199;
       padding: 15px;
       margin: 15px 0;
+    }
+    
+    .avaliacao {
+      color: #ae0606;
+      font-weight: bold;
     }
     
     @media (max-width: 768px) {
@@ -72,9 +109,8 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>ApoioSiria</h1>
-      <p>Integração e direitos dos refugiados sírios no Brasil</p>
+    <div class="banner">
+      <img src="img/logo.jpg" alt="Logo do site ApoioSiria">
     </div>
   </header>
   
@@ -90,6 +126,42 @@
   </nav>
 
   <main class="container">
+    <section class="intro-section">
+      <h2>Ensino de Língua e Cultura</h2>
+      <p>A seção de ensino de língua e cultura do site ApoioSíria tem como objetivo capacitar refugiados sírios com o conhecimento necessário da língua portuguesa para que possam se integrar socialmente, estudar e trabalhar no Brasil. Além disso, essa seção promove um entendimento cultural sobre os costumes brasileiros, favorecendo uma adaptação mais fluida e respeitosa.</p>
+    </section>
+
+    <section class="cultura-section">
+      <h2>Cursos de Português Gratuitos</h2>
+      <p>O site apresenta cursos gratuitos e acessíveis, com links diretos que podem ser copiados e utilizados por qualquer dispositivo:</p>
+      
+      <div class="curso-card">
+        <h3>Curso de Português para Estrangeiros – USP</h3>
+        <p>Oferecido pela Universidade de São Paulo, esse curso é altamente avaliado e fornece certificado de conclusão.</p>
+        <a href="https://www5.usp.br/ensino/cursos-de-portugues-para-estrangeiros/" class="curso-link" target="_blank">Acessar Curso</a>
+        <p class="avaliacao">Avaliação: ★★★★★ (5/5 estrelas)</p>
+      </div>
+      
+      <div class="curso-card">
+        <h3>Curso Online do IFSP</h3>
+        <p>Curso livre de português para imigrantes. Muito recomendado por ONGs de apoio à imigração. Sem necessidade de matrícula formal.</p>
+        <a href="https://mooc.ifsp.edu.br/course/index.php?categoryid=7" class="curso-link" target="_blank">Acessar Curso</a>
+      </div>
+      
+      <div class="curso-card">
+        <h3>YouTube – Canal "Português para Estrangeiros" (Prof. Fábio Lima)</h3>
+        <p>Aulas didáticas, organizadas por temas (alfabeto, saudações, profissões, tempo verbal).</p>
+        <a href="https://www.youtube.com/@professorfabiolima" class="curso-link" target="_blank">Acessar Canal</a>
+        <p class="avaliacao">Avaliação: 4.8/5 estrelas</p>
+      </div>
+      
+      <div class="curso-card">
+        <h3>Canal "Fala Gringo" – Cultura e Expressões do Dia a Dia</h3>
+        <p>Ensina português de forma descontraída e inclui contextos culturais com expressões regionais e gírias.</p>
+        <a href="https://www.youtube.com/@falagringo" class="curso-link" target="_blank">Acessar Canal</a>
+      </div>
+      
+    </section>
     <section class="glossario-container">
       <h2>Glossário Árabe-Português Essencial</h2>
       <p>Frases e palavras úteis para o dia a dia no Brasil:</p>
@@ -158,7 +230,7 @@
 
     <section class="cultura-section">
       <h2>Cultura Brasileira</h2>
-      <p>Conhecer a cultura local é essencial para uma boa integração:</p>
+      <p>Além dos cursos e glossários, a seção traz informações culturais que abordam desde festas populares até hábitos alimentares brasileiros, reforçando o sentimento de acolhimento e pertencimento, facilitando não só a comunicação, mas a convivência harmônica.</p>
       
       <div class="dica-box">
         <h3>Comunicação no Brasil</h3>
@@ -187,17 +259,10 @@
     </section>
 
     <section class="cultura-section">
-      <h2>Aprendizado do Português</h2>
-      
-      <h3>Recursos Gratuitos</h3>
-      <ul>
-        <li><strong>MEC - Português para Estrangeiros:</strong> Plataforma do governo com aulas gratuitas</li>
-        <li><strong>Duolingo:</strong> Aplicativo com versão árabe-português</li>
-        <li><strong>YouTube:</strong> Canais como "Português para Refugiados"</li>
-      </ul>
+      <h2>Dicas para Aprendizado</h2>
       
       <div class="dica-box">
-        <h3>Dicas para Aprender Mais Rápido</h3>
+        <h3>Como aprender mais rápido</h3>
         <ol>
           <li>Pratique diariamente, mesmo que por pouco tempo</li>
           <li>Assista programas de TV brasileiros com legendas</li>
@@ -206,13 +271,6 @@
           <li>Não tenha medo de errar - é parte do aprendizado</li>
         </ol>
       </div>
-      
-      <h3>Estrutura Básica do Português</h3>
-      <ul>
-        <li><strong>Saudações:</strong> "Bom dia" (manhã), "Boa tarde" (tarde), "Boa noite" (noite)</li>
-        <li><strong>Perguntas:</strong> "Como você está?" (saudação comum)</li>
-        <li><strong>Expressões:</strong> "Por favor", "Com licença", "Obrigado(a)"</li>
-      </ul>
     </section>
   </main>
   
