@@ -1,159 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajuda e Emergência - ApoioSiria</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergência - ApoioSiria</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho e Navegação (igual à página inicial) -->
-    
-    <main class="container">
-        <section class="main-content">
-            <h1 class="section-title">Ajuda e Emergência</h1>
-            <p>Serviços essenciais e canais de denúncia para situações de risco</p>
-            
-            <div class="alert-box">
-                <h3>Se você está em perigo imediato, ligue:</h3>
-                <p class="emergency-number">190</p>
-                <p>Polícia Militar - Resposta imediata</p>
-            </div>
-            
-            <div class="section">
-                <h2>Contatos de Emergência</h2>
-                
-                <div class="card-grid">
-                    <div class="card emergency-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Polícia</h3>
-                            <p class="emergency-number">190</p>
-                            <p>Para situações de violência, ameaça ou crimes em andamento</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card emergency-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Bombeiros</h3>
-                            <p class="emergency-number">193</p>
-                            <p>Incêndios, resgates e emergências médicas graves</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card emergency-card">
-                        <div class="card-body">
-                            <h3 class="card-title">SAMU</h3>
-                            <p class="emergency-number">192</p>
-                            <p>Atendimento médico de emergência</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card emergency-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Disque Direitos Humanos</h3>
-                            <p class="emergency-number">100</p>
-                            <p>Denúncias de violações de direitos humanos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Como Denunciar Abusos ou Discriminação</h2>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Canais de Denúncia</h3>
-                        <ul>
-                            <li><strong>Disque 100</strong>: Violações de direitos humanos</li>
-                            <li><strong>Ministério Público do Trabalho</strong>: Trabalho análogo à escravidão</li>
-                            <li><strong>Defensoria Pública da União</strong>: Para assistência jurídica gratuita</li>
-                        </ul>
-                        
-                        <h4>O que fazer ao sofrer discriminação:</h4>
-                        <ol>
-                            <li>Registre provas (fotos, vídeos, testemunhas)</li>
-                            <li>Procure uma delegacia para registrar Boletim de Ocorrência</li>
-                            <li>Entre em contato com organizações de apoio a refugiados</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Centros de Apoio Psicossocial</h2>
-                <p>Serviços especializados para refugiados que precisam de apoio emocional:</p>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">CAPS - Centros de Atenção Psicossocial</h3>
-                        <p>Atendimento gratuito pelo SUS para crises emocionais e saúde mental</p>
-                        <p><strong>Endereços em São Paulo:</strong></p>
-                        <ul>
-                            <li>CAPS III Vila Mariana - R. Vergueiro, 2499</li>
-                            <li>CAPS AD Leste - Av. do Oratório, 1190</li>
-                        </ul>
-                        <a href="#" class="btn-outline">Ver todos os endereços</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">CVV - Centro de Valorização da Vida</h3>
-                        <p class="emergency-number">188</p>
-                        <p>Atendimento 24h por telefone para prevenção ao suicídio</p>
-                        <p>Também disponível por chat no site oficial</p>
-                        <a href="#" class="btn-outline">Acessar site do CVV</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Formulário de Solicitação de Ajuda</h2>
-                <p>Se precisar de assistência, preencha o formulário abaixo e nossa equipe entrará em contato:</p>
-                
-                <form class="help-form">
-                    <div class="form-group">
-                        <label for="nome-help" class="form-label">Nome</label>
-                        <input type="text" id="nome-help" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="contato-help" class="form-label">Telefone ou E-mail</label>
-                        <input type="text" id="contato-help" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="cidade-help" class="form-label">Cidade</label>
-                        <input type="text" id="cidade-help" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="tipo-ajuda" class="form-label">Tipo de Ajuda Necessária</label>
-                        <select id="tipo-ajuda" class="form-control">
-                            <option value="">Selecione...</option>
-                            <option value="juridica">Assistência Jurídica</option>
-                            <option value="psicologica">Apoio Psicológico</option>
-                            <option value="moradia">Moradia Emergencial</option>
-                            <option value="alimentacao">Cesta Básica/Alimentação</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="mensagem-help" class="form-label">Descreva sua situação</label>
-                        <textarea id="mensagem-help" class="form-control" rows="4"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Enviar Solicitação</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <div class="text-center" style="margin: 30px 0;">
-        <a href="index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
+    <header>
+        <div class="container">
+          <h1>ApoioSiria</h1>
+          <p>Integração e direitos dos refugiados sírios no Brasil</p>
+        </div>
+      </header>
+    <nav>
+        <div class="container nav-container">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="direitos.html" class="nav-link">Direitos</a></li>
+            <li class="nav-item"><a href="ensino.html" class="nav-link">Cultura e Idioma</a></li>
+            <li class="nav-item"><a href="emergencia.html" class="nav-link.active">Emergência</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  <main class="container">
+    <section>
+      <h2>Contatos de Emergência</h2>
+      <table>
+        <tr>
+          <th>Serviço</th>
+          <th>Telefone</th>
+          <th>Atendimento</th>
+        </tr>
+        <tr>
+          <td>Polícia Militar</td>
+          <td>190</td>
+          <td>24 horas</td>
+        </tr>
+        <tr>
+          <td>Samu (Saúde)</td>
+          <td>192</td>
+          <td>24 horas</td>
+        </tr>
+        <tr>
+          <td>Bombeiros</td>
+          <td>193</td>
+          <td>24 horas</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Como Denunciar Xenofobia e Racismo</h2>
+      <h3>1. Disque Direitos Humanos</h3>
+      <p><strong>Telefone:</strong> 100 (ligação gratuita)</p>
+      <p>Funciona 24h e aceita denúncias anônimas.</p>
+      
+      <h3>2. Delegacias Especializadas</h3>
+      <p>Procure a Delegacia mais próxima e:</p>
+      <ul>
+        <li>Peça para registrar um Boletim de Ocorrência</li>
+        <li>Leve testemunhas se possível</li>
+        <li>Anote o número do protocolo</li>
+      </ul>
+      
+      <h3>3. Ministério Público Federal</h3>
+      <p>Para casos graves de discriminação:</p>
+      <ul>
+        <li><strong>Site:</strong> www.mpf.mp.br</li>
+        <li><strong>Disque MPF:</strong> 127 (em capitais)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Assistência Social</h2>
+      <h3>Centros de Referência</h3>
+      <ul>
+        <li><strong>CRAS</strong> - Centro de Referência de Assistência Social</li>
+        <li><strong>CREAS</strong> - Centro de Referência Especializado</li>
+      </ul>
+      <p>Oferecem apoio psicológico e orientação gratuita.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>ApoioSiria &copy; 2025 - Todos os direitos reservados</p>
+      <p>Contato: contato@apoiosiria.org.br</p>
     </div>
-    <!-- Rodapé (igual à página inicial) -->
+  </footer>
 </body>
 </html>

@@ -1,150 +1,226 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ensino de Língua e Cultura - ApoioSiria</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura e Idioma - ApoioSiria</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para esta página */
+    .glossario-container {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .glossario-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .glossario-table th {
+      background-color: #007A3D;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    
+    .glossario-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+    
+    .glossario-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .glossario-table tr:hover {
+      background-color: #e6f7e6;
+    }
+    
+    
+    .cultura-section h3 {
+      color: #CE1126;
+      border-bottom: 2px solid #007A3D;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .dica-box {
+      background-color: #f0f8ff;
+      border-left: 4px solid #007A3D;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    @media (max-width: 768px) {
+      .glossario-table {
+        font-size: 0.9em;
+      }
+      
+      .glossario-table th, 
+      .glossario-table td {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Cabeçalho e Navegação (igual à página inicial) -->
-    
-    <main class="container">
-        <section class="main-content">
-            <h1 class="section-title">Ensino de Língua e Cultura</h1>
-            
-            <div class="section">
-                <h2>Aprendizado de Português</h2>
-                <p>Recursos essenciais para dominar o idioma:</p>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Plataformas Online Recomendadas</h3>
-                        <ul>
-                            <li><strong>Duolingo</strong> - Aplicativo com versão árabe-português</li>
-                            <li><strong>MEC - Português para Estrangeiros</strong>: Curso gratuito do governo</li>
-                            <li><strong>YouTube</strong>: Canais como "Português para Refugiados"</li>
-                        </ul>
-                        
-                        <h4 style="margin-top:20px;">Aulas Presenciais (Quando Disponíveis)</h4>
-                        <ul>
-                            <li><strong>Centros de Referência</strong>: Verifique disponibilidade na sua cidade</li>
-                            <li><strong>ONGs Parceiras</strong>: Cáritas e ADUS oferecem cursos em SP e RJ</li>
-                        </ul>
-                        
-                        <a href="#" class="btn-outline">Ver plataformas online</a>
-                    </div>
-                </div>
-                
-                <a href="index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Cursos Online</h3>
-                        <ul>
-                            <li><strong>MEC - Português para Estrangeiros</strong>: Plataforma do governo com aulas gratuitas</li>
-                            <li><strong>Duolingo</strong>: Aplicativo com versão árabe-português</li>
-                            <li><strong>UnB - Português para Refugiados</strong>: Curso online com certificado</li>
-                        </ul>
-                        <a href="#" class="btn-outline">Acessar cursos online</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Glossário Bilíngue Árabe-Português</h2>
-                <p>Frases essenciais para o dia a dia no Brasil:</p>
-                
-                <table class="glossary-table">
-                    <thead>
-                        <tr>
-                            <th>Árabe (Escrita)</th>
-                            <th>Pronúncia</th>
-                            <th>Português</th>
-                            <th>Contexto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>أين الحمام؟</td>
-                            <td>Ayna al-hammam?</td>
-                            <td>Onde fica o banheiro?</td>
-                            <td>Locais públicos</td>
-                        </tr>
-                        <tr>
-                            <td>كم يكلف هذا؟</td>
-                            <td>Kam yukallif hadha?</td>
-                            <td>Quanto custa isso?</td>
-                            <td>Compras</td>
-                        </tr>
-                        <tr>
-                            <td>أحتاج إلى طبيب</td>
-                            <td>Ahtaju ila tabib</td>
-                            <td>Preciso de um médico</td>
-                            <td>Emergência</td>
-                        </tr>
-                        <tr>
-                            <td>أين محطة الحافلات؟</td>
-                            <td>Ayna mahattat al-hafalat?</td>
-                            <td>Onde é o ponto de ônibus?</td>
-                            <td>Transporte</td>
-                        </tr>
-                        <tr>
-                            <td>هل يتحدث أحد العربية هنا؟</td>
-                            <td>Hal yatahaddath ahadun al-arabiyya huna?</td>
-                            <td>Alguém aqui fala árabe?</td>
-                            <td>Comunicação</td>
-                        </tr>
-                        <tr>
-                            <td>أنا بحاجة إلى مساعدة</td>
-                            <td>Ana bihajat ila musa'ada</td>
-                            <td>Preciso de ajuda</td>
-                            <td>Emergência</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <a href="glossario-completo.pdf" class="btn">Baixar glossário completo (PDF)</a>
-                <a href="index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
-            </div>
-            
-            <div class="section">
-                <h2>Cultura Brasileira</h2>
-                <p>Entender a cultura local ajuda na adaptação e evita mal-entendidos:</p>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <img src="imagens/cultura1.jpg" alt="Pessoas conversando" class="card-img">
-                        <div class="card-body">
-                            <h3 class="card-title">Comunicação no Brasil</h3>
-                            <ul>
-                                <li>Brasileiros são mais informais no trato</li>
-                                <li>Contato físico comum (abraços, beijos no rosto)</li>
-                                <li>Pontualidade mais flexível em situações sociais</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <img src="imagens/cultura2.jpg" alt="Festa brasileira" class="card-img">
-                        <div class="card-body">
-                            <h3 class="card-title">Tradições e Festas</h3>
-                            <ul>
-                                <li>Carnaval - maior festa popular</li>
-                                <li>Festa Junina - comidas típicas e danças</li>
-                                <li>Natal e Ano Novo - celebrações familiares</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="text-center" style="margin: 30px 0;">
-        <a href="index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
+  <header>
+    <div class="container">
+      <h1>ApoioSiria</h1>
+      <p>Integração e direitos dos refugiados sírios no Brasil</p>
     </div>
-    <!-- Rodapé (igual à página inicial) -->
+  </header>
+  
+  <nav>
+    <div class="container nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="direitos.html" class="nav-link">Direitos</a></li>
+        <li class="nav-item"><a href="ensino.html" class="nav-link">Cultura e Idioma</a></li>
+        <li class="nav-item"><a href="emergencia.html" class="nav-link">Emergência</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="glossario-container">
+      <h2>Glossário Árabe-Português Essencial</h2>
+      <p>Frases e palavras úteis para o dia a dia no Brasil:</p>
+      
+      <table class="glossario-table">
+        <thead>
+          <tr>
+            <th>Árabe (Escrita)</th>
+            <th>Pronúncia</th>
+            <th>Português</th>
+            <th>Contexto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>مرحبا</td>
+            <td>Marhaba</td>
+            <td>Olá</td>
+            <td>Saudação</td>
+          </tr>
+          <tr>
+            <td>شكرا</td>
+            <td>Shukran</td>
+            <td>Obrigado(a)</td>
+            <td>Agradecimento</td>
+          </tr>
+          <tr>
+            <td>أحتاج مساعدة</td>
+            <td>Ahtaju musa'ada</td>
+            <td>Preciso de ajuda</td>
+            <td>Emergência</td>
+          </tr>
+          <tr>
+            <td>أين الحمام؟</td>
+            <td>Ayna al-hammam?</td>
+            <td>Onde fica o banheiro?</td>
+            <td>Locais públicos</td>
+          </tr>
+          <tr>
+            <td>كم يكلف هذا؟</td>
+            <td>Kam yukallif hadha?</td>
+            <td>Quanto custa isso?</td>
+            <td>Compras</td>
+          </tr>
+          <tr>
+            <td>أنا لا أفهم</td>
+            <td>Ana la afham</td>
+            <td>Eu não entendo</td>
+            <td>Comunicação</td>
+          </tr>
+          <tr>
+            <td>هل تتكلم العربية؟</td>
+            <td>Hal tatakallam al-arabiyya?</td>
+            <td>Você fala árabe?</td>
+            <td>Comunicação</td>
+          </tr>
+          <tr>
+            <td>أنا جائع</td>
+            <td>Ana jai'</td>
+            <td>Estou com fome</td>
+            <td>Alimentação</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="cultura-section">
+      <h2>Cultura Brasileira</h2>
+      <p>Conhecer a cultura local é essencial para uma boa integração:</p>
+      
+      <div class="dica-box">
+        <h3>Comunicação no Brasil</h3>
+        <ul>
+          <li>Brasileiros são geralmente informais e amigáveis</li>
+          <li>Contato físico comum (abraços, beijos no rosto entre amigos)</li>
+          <li>Pontualidade pode ser mais flexível em encontros sociais</li>
+        </ul>
+      </div>
+      
+      <div class="dica-box">
+        <h3>Costumes Importantes</h3>
+        <ul>
+          <li><strong>Cumprimentos:</strong> "Bom dia", "Boa tarde" e "Boa noite" são essenciais</li>
+          <li><strong>Alimentação:</strong> Refeições principais geralmente incluem arroz e feijão</li>
+          <li><strong>Festas:</strong> Brasileiros celebram muitas festas ao longo do ano</li>
+        </ul>
+      </div>
+      
+      <h3>Feriados e Celebrações</h3>
+      <ul>
+        <li><strong>Carnaval:</strong> Maior festa popular (Fevereiro/Março)</li>
+        <li><strong>Festa Junina:</strong> Comidas típicas e danças (Junho)</li>
+        <li><strong>Natal e Ano Novo:</strong> Celebrações familiares importantes</li>
+      </ul>
+    </section>
+
+    <section class="cultura-section">
+      <h2>Aprendizado do Português</h2>
+      
+      <h3>Recursos Gratuitos</h3>
+      <ul>
+        <li><strong>MEC - Português para Estrangeiros:</strong> Plataforma do governo com aulas gratuitas</li>
+        <li><strong>Duolingo:</strong> Aplicativo com versão árabe-português</li>
+        <li><strong>YouTube:</strong> Canais como "Português para Refugiados"</li>
+      </ul>
+      
+      <div class="dica-box">
+        <h3>Dicas para Aprender Mais Rápido</h3>
+        <ol>
+          <li>Pratique diariamente, mesmo que por pouco tempo</li>
+          <li>Assista programas de TV brasileiros com legendas</li>
+          <li>Converse com brasileiros sempre que possível</li>
+          <li>Anote palavras novas e revise regularmente</li>
+          <li>Não tenha medo de errar - é parte do aprendizado</li>
+        </ol>
+      </div>
+      
+      <h3>Estrutura Básica do Português</h3>
+      <ul>
+        <li><strong>Saudações:</strong> "Bom dia" (manhã), "Boa tarde" (tarde), "Boa noite" (noite)</li>
+        <li><strong>Perguntas:</strong> "Como você está?" (saudação comum)</li>
+        <li><strong>Expressões:</strong> "Por favor", "Com licença", "Obrigado(a)"</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>ApoioSiria &copy; 2025 - Todos os direitos reservados</p>
+      <p>Contato: contato@apoiosiria.org.br</p>
+    </div>
+  </footer>
 </body>
 </html>
